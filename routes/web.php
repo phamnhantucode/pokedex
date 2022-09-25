@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/detail', function () {
     return view('detail');
+});
+Route::get('/', function () {
+    return view('pokedex');
 });
