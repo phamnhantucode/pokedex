@@ -19,3 +19,7 @@ Route::get('/detail', function () {
 Route::get('/', function () {
     return view('pokedex');
 });
+
+Route::get('/login',function(){
+    return view ('login');
+});

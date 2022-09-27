@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a99ff;
+    font-family: "JetBrains Mono", monospace;
+    overflow: hidden;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.tranX-300 {
+    transform: translateX(-300%);
+}
+
+#header {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: lowercase;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 1s ease;
+}
+
+.text-left span {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #36395A;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 1em;
+    cursor: pointer;
+    color: #36395A;
+}
+
+.text-login {
+    cursor: pointer;
+
+}
+
+.text-login button {
+    border: none;
+    background-color: inherit;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    color: #36395A;
+    text-transform: lowercase;
+}
+
+#content {
+    width: 100%;
+    height: 560px;
+}
+
+.feature {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text {
+    position: absolute;
+    bottom: 40%;
+    color: #36395A;
+    margin-left: 50px;
+    width: 50%;
+    transition: transform 3s ease;
+}
+
+.text-header {
+    margin: 50px 0;
+    font-size: 80px;
+
+}
+
+.text-small {
+    font-size: 20px;
+}
+
+.btn {
+    position: absolute;
+    top: 10em;
+    left: 15em;
+}
+
+#cover-img {
+    position: relative;
+    height: 100%;
+}
+
+#my-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 34em;
+    object-fit: contain;
+}
+
+#footer {
+    text-align: center;
+    font-size: 2em;
+
+    width: 100%;
+    color: #4A686A;
+}
+
+.icon {
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.form {
+    background-color: #e6f0f0;
+    position: absolute;
+    top: 2em;
+    left: 3em;
+    width: 30em;
+    height: 40em;
+    z-index: 9999;
+    border-radius: 10px;
+    transition: transform 1.5s ease;
+}
+
+#login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.field {
+    padding: 1em;
+    width: 80%;
+}
+
+.input {
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+}
+
+.form-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.check {
+    margin-bottom: 2em;
+}
+
+.check label,
+span {
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.check span {
+    position: absolute;
+    right: 4em;
+
+
+}
+
+.check-input {
+    display: inline-block;
+    position: absolute;
+    left: 4em;
+}
+
+#sign-in {
+    width: 80%;
+    height: 4em;
+    border: none;
+    border-radius: 5px;
+}
+
+.other-login {
+    position: relative;
+    width: 80%;
+    text-align: center;
+
+}
+
+.regis {
+    margin-bottom: 0.5em;
+}
+
+/* CSS */
+.button-57 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 20px 25px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+}
+
+.button-57 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+}
+
+.button-57 span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+}
+
+.button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+}
+
+.button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.button-57 {
+    margin-top: 1em;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+
+/* CSS */
+.button-30 {
+    position: absolute;
+    top: 200px;
+    z-index: 1000;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
