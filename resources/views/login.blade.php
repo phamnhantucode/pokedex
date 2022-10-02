@@ -50,17 +50,19 @@
         <i class="icon fa-solid fa-envelope"></i>
     </div>
     <div class="form tranX-300">
-        <form id="login">
+        <form id="login" >
             <div class="form-title">
                 <h2>Login</h2>
             </div>
             <div class="field user-name">
                 <label for="">User name</label> <br>
-                <input type="text" name="" id="" placeholder="User name" class="input">
+                <input type="text" name="" id="name" placeholder="User name" class="input">
+                <span class="er er-user-name" id="er-user-name"></span>
             </div>
             <div class="field password">
                 <label for="">Password</label> <br>
-                <input type="password" name="Password" id="" placeholder="Password" class="input">
+                <input type="password" name="Password" id="pass" placeholder="Password" class="input">
+                <span class="er er-password" id="er-password"></span>
             </div>
             <div class=" check">
                 <div class="check-input">
@@ -71,7 +73,7 @@
                 <span class="underline">Forget password?</span>
             </div>
             <!-- <button id="sign-in">Sign in</button> <br> -->
-            <button class="button-57 " role="button">
+            <button class="button-57 " onclick="return checkForm()" >
                 <span class="text-btn">Login</span>
                 <span>
                     Click Me ~~~

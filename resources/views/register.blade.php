@@ -17,30 +17,40 @@
                 <h2>register</h2>
             </div>
             <div class="content">
-                <div class="name">
+                <div class="name field">
                     <div class="f-name ">
                         <label for="">First name</label> <br>
-                        <input type="text" placeholder="First Name" class=" ip ip-half">
-                     </div>
+                        <input type="text" placeholder="First Name" class=" ip ip-half" id="f-name">
+                        <span class="er er-password" id="er-f-name"></span>
+ 
+                    </div>
                     <div class="l-name  ">
                         <label for="">Last name</label> <br>
-                        <input type="text" placeholder="Last Name" class=" ip ip-half" >
+                        <input type="text" placeholder="Last Name" class=" ip ip-half" id="l-name">
+                        <span class="er er-password" id="er-l-name"></span>
+                   
                     </div>
                 </div>
                
                 <div class="user-name field ">
                     <label for="">User name</label> <br>
-                    <input type="text" placeholder="User Name" class="ip">
+                    <input type="text" placeholder="User Name" class="ip" id="user-name">
+                    <span class="er er-password" id="er-user-name"></span>
+               
                 </div>
                 <div class="pass field">
                     <label for="">Password</label> <br>
-                    <input type="password" placeholder="Password" class="ip">
+                    <input type="password" placeholder="Password" class="ip" id="pass">
+                    <span class="er er-password" id="er-password"></span>
+                
                 </div>
                 <div class="re-pass field">
                     <label for="">Re-Password</label> <br>
-                    <input type="password" placeholder="Re-Password" class="ip">
+                    <input type="password" placeholder="Re-Password" class="ip" id="re-pass">
+                    <span class="er er-password" id="er-re-password"></span>
+                
                 </div>
-                 <button class="button-57 " role="button">
+                <button class="button-57 " onclick="return checkForm()">
                 <span class="text-btn">Create</span>
                 <span>
                     Click Me ~~~

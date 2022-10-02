@@ -220,6 +220,11 @@ span {
     margin-bottom: 0.5em;
 }
 
+.er{
+    color: #eb4242;
+    font-style: italic;
+   
+}
 .introduce-login {
     position: absolute;
     width: 60em;
@@ -244,13 +249,14 @@ span {
     display: block;
 }
 .fade {
-    animation-name: fade;
-    animation-duration: 3s;
+    animation-name: fade; 
+    animation-duration: 10s;
+    animation-timing-function: ease;
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .8
     }
 
     to {

@@ -35,16 +35,39 @@ function showSlides() {
         slideIndex = 1
     }
     slides[slideIndex - 1].classList.add('active')
-    console.log(1);
     setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 function removeActive() {
-    console.log(2);
-    slides.forEach(function(slide){
+    slides.forEach(function (slide) {
         slide.classList.remove("active");
     }
     )
 }
 
+//validation form for login
+var check = true;
+function checkForm() {
+    let name = document.getElementById("name").value;
+    let pass = document.getElementById("pass").value;
+    console.log(1);
+    console.log(name.length);
+    if (name.length === 0) {
+        check = false;
+        document.getElementById("er-user-name").innerText = "*không được để trống đâu";
+    } else {
+        document.getElementById("er-user-name").innerHTML = "";
+    }
+    console.log(pass.length);
+    if (pass.length === 0) {
+        check = false;
+        document.getElementById("er-password").innerText = "*không được để trống";
+    }else if(pass.length<8){
+        document.getElementById("er-password").innerText = "*password have to more than 8 character";
+    }
+     else {
+        document.getElementById("er-password").innerText = "";
+    }
+    return check;
+}
 
 

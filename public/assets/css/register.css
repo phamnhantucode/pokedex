@@ -39,27 +39,40 @@ form {
 
 .content {
     width: 100%;
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.name{
+
+.content>div {
+    height: 5em;
+    margin: 1.5em 0;
+}
+.content>div:nth-child(1){
+    margin: 0;
+}
+.er {
+    color: #eb4242;
+    font-style: italic;
+    font-size: 0.8;
+}
+
+.name {
     width: 80%;
     justify-content: space-between;
     display: flex;
 }
-.content>div{
-    padding: 0.5em 0.5em;
-}
 
-.ip-half{
+.ip-half {
     display: inline-block;
 }
-.field{
+
+.field {
     width: 80%;
-    margin: 0.2em 0;
 }
+
 .ip {
     width: 100%;
     height: 3em;
@@ -67,8 +80,9 @@ form {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
+    height: 3em;
 }
 
 .img-container {
@@ -84,8 +98,10 @@ form {
     object-fit: cover;
 
 }
+
 .button-57 {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     overflow: hidden;
     border: 1px solid #18181a;
     color: black;
