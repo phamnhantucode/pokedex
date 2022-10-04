@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('assets/css/register.css') }}" media="all" type="text/css">
     <script src="https://kit.fontawesome.com/b2ae9f645e.js" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
     <div id="container">
@@ -19,35 +20,35 @@
             <div class="content">
                 <div class="name field">
                     <div class="f-name ">
-                        <label for="">First name</label> <br>
+                        <label for="">First name</label> 
                         <input type="text" placeholder="First Name" class=" ip ip-half" id="f-name">
-                        <span class="er er-password" id="er-f-name"></span>
+                        <span class="er er-password" id="er-f-name">.</span>
  
                     </div>
                     <div class="l-name  ">
-                        <label for="">Last name</label> <br>
+                        <label for="">Last name</label> 
                         <input type="text" placeholder="Last Name" class=" ip ip-half" id="l-name">
-                        <span class="er er-password" id="er-l-name"></span>
+                        <span class="er er-password" id="er-l-name">.</span>
                    
                     </div>
                 </div>
                
                 <div class="user-name field ">
-                    <label for="">User name</label> <br>
+                    <label for="">User name</label> 
                     <input type="text" placeholder="User Name" class="ip" id="user-name">
-                    <span class="er er-password" id="er-user-name"></span>
+                    <span class="er er-password" id="er-user-name">.</span>
                
                 </div>
                 <div class="pass field">
-                    <label for="">Password</label> <br>
+                    <label for="">Password</label> 
                     <input type="password" placeholder="Password" class="ip" id="pass">
-                    <span class="er er-password" id="er-password"></span>
+                    <span class="er er-password" id="er-password">.</span>
                 
                 </div>
                 <div class="re-pass field">
-                    <label for="">Re-Password</label> <br>
+                    <label for="">Re-Password</label> 
                     <input type="password" placeholder="Re-Password" class="ip" id="re-pass">
-                    <span class="er er-password" id="er-re-password"></span>
+                    <span class="er er-password" id="er-re-password">.</span>
                 
                 </div>
                 <button class="button-57 " onclick="return checkForm()">
@@ -57,6 +58,7 @@
                 </span>
             </button>
             </div>
+            
         </form>
         </div>
        <div class="img-container">

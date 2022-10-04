@@ -31,7 +31,7 @@ transform: translateX(300%);
     font-weight: 500;
     text-transform: lowercase;
     width: 100%;
-    height: 4em;
+    height:10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -71,8 +71,9 @@ transform: translateX(300%);
 #content {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 520px;
+    height: 80%;
 }
 
 .feature {
@@ -126,7 +127,7 @@ transform: translateX(300%);
 #footer {
     text-align: center;
     font-size: 2em;
-
+    height: 10%;
     width: 100%;
     color: var(--color-text);
     transition: transform 1s ease;
@@ -144,8 +145,8 @@ transform: translateX(300%);
     position: absolute;
     top: 2em;
     left: 3em;
-    width: 30em;
-    height: 40em;
+    width: 30%;
+    height: 90%;
     z-index: 9999;
     border-radius: 10px;
     transition: transform 1.5s ease;
@@ -160,10 +161,13 @@ transform: translateX(300%);
     align-items: center;
     justify-content: center;
 }
-
+.content{
+    width: 80%;
+    height: auto;
+}
 .field {
     padding: 1em;
-    width: 80%;
+    width: 100%;
 }
 
 .input {
@@ -185,13 +189,14 @@ transform: translateX(300%);
 
 .check label,
 span {
+    width: 40%;
     font-size: 0.9em;
     cursor: pointer;
 }
 
 .check span {
     position: absolute;
-    right: 4em;
+    right: 0;
 
 
 }
@@ -223,12 +228,12 @@ span {
 .er{
     color: #eb4242;
     font-style: italic;
-   
+    font-family: 'Poppins';
 }
 .introduce-login {
     position: absolute;
-    width: 60em;
-    height: 40em;
+    width: 65%;
+    height: 90%;
     top:2em;
     right: 1em;
     border-radius: 10px;
@@ -333,7 +338,6 @@ span {
 .button-57 {
     margin-top: 1em;
     border-radius: 5px;
-    margin-bottom: 2em;
 }
 
 

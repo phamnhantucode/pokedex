@@ -10,6 +10,7 @@
     <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}" media="all" type="text/css">
     <script src="https://kit.fontawesome.com/b2ae9f645e.js" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body>
@@ -54,24 +55,27 @@
             <div class="form-title">
                 <h2>Login</h2>
             </div>
-            <div class="field user-name">
-                <label for="">User name</label> <br>
-                <input type="text" name="" id="name" placeholder="User name" class="input">
-                <span class="er er-user-name" id="er-user-name"></span>
-            </div>
-            <div class="field password">
-                <label for="">Password</label> <br>
-                <input type="password" name="Password" id="pass" placeholder="Password" class="input">
-                <span class="er er-password" id="er-password"></span>
-            </div>
-            <div class=" check">
-                <div class="check-input">
-                    <input type="checkbox" name="" id="">
-                    <label for="">Auto login</label>
+            <div class="content">
+                <div class="field user-name">
+                    <label for="">User name</label> <br>
+                    <input type="text" name="" id="name" placeholder="User name" class="input">
+                    <span class="er er-user-name" id="er-user-name">.</span>
                 </div>
+                <div class="field password">
+                    <label for="">Password</label> <br>
+                    <input type="password" name="Password" id="pass" placeholder="Password" class="input">
+                    <span class="er er-password" id="er-password">.</span>
+                </div>
+                <div class=" check">
+                    <div class="check-input">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Auto login</label>
+                    </div>
 
-                <span class="underline">Forget password?</span>
+                    <span class="underline">Forget password?</span>
             </div>
+            </div>
+           
             <!-- <button id="sign-in">Sign in</button> <br> -->
             <button class="button-57 " onclick="return checkForm()" >
                 <span class="text-btn">Login</span>
