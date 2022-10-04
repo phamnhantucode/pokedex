@@ -73,16 +73,17 @@
                     </div>
 
                     <span class="underline">Forget password?</span>
-            </div>
-            </div>
-           
-            <!-- <button id="sign-in">Sign in</button> <br> -->
-            <button class="button-57 " onclick="return checkForm()" >
+                </div>
+                 <button class="button-57 " onclick="return checkForm()" >
                 <span class="text-btn">Login</span>
                 <span>
                     Click Me ~~~
                 </span>
             </button>
+            </div>
+           
+            <!-- <button id="sign-in">Sign in</button> <br> -->
+           
             <div class="regis">
                 <span>You don't have account?</span>
                 <span class="underline"><i>Register</i> </span>
