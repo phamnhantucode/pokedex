@@ -31,7 +31,7 @@ transform: translateX(300%);
     font-weight: 500;
     text-transform: lowercase;
     width: 100%;
-    height: 4em;
+    height:10%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -71,8 +71,9 @@ transform: translateX(300%);
 #content {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 520px;
+    height: 80%;
 }
 
 .feature {
@@ -126,7 +127,7 @@ transform: translateX(300%);
 #footer {
     text-align: center;
     font-size: 2em;
-
+    height: 10%;
     width: 100%;
     color: var(--color-text);
     transition: transform 1s ease;
@@ -144,8 +145,8 @@ transform: translateX(300%);
     position: absolute;
     top: 2em;
     left: 3em;
-    width: 30em;
-    height: 40em;
+    width: 30%;
+    height: 92%;
     z-index: 9999;
     border-radius: 10px;
     transition: transform 1.5s ease;
@@ -160,10 +161,18 @@ transform: translateX(300%);
     align-items: center;
     justify-content: center;
 }
-
-.field {
-    padding: 1em;
+.content{
     width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.field {
+    padding-top:1em;
+    width: 100%;
 }
 
 .input {
@@ -176,7 +185,7 @@ transform: translateX(300%);
     width: 100%;
     text-align: center;
     font-size: 2em;
-    margin-bottom: 1em;
+
 }
 
 .check {
@@ -185,13 +194,14 @@ transform: translateX(300%);
 
 .check label,
 span {
+    width: 40%;
     font-size: 0.9em;
     cursor: pointer;
 }
 
 .check span {
     position: absolute;
-    right: 4em;
+    right: 0;
 
 
 }
@@ -217,18 +227,20 @@ span {
 }
 
 .regis {
+    margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
 .er{
     color: #eb4242;
     font-style: italic;
-   
+    font-family: 'Poppins';
+    opacity: 0;
 }
 .introduce-login {
     position: absolute;
-    width: 60em;
-    height: 40em;
+    width: 65%;
+    height: 92%;
     top:2em;
     right: 1em;
     border-radius: 10px;
@@ -281,6 +293,7 @@ span {
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 50%;
+    z-index: 999;
 }
 
 .button-57 span:first-child {
@@ -333,7 +346,6 @@ span {
 .button-57 {
     margin-top: 1em;
     border-radius: 5px;
-    margin-bottom: 2em;
 }
 
 

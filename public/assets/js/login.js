@@ -53,19 +53,23 @@ function checkForm() {
     console.log(name.length);
     if (name.length === 0) {
         check = false;
-        document.getElementById("er-user-name").innerText = "*không được để trống đâu";
+        document.getElementById("er-user-name").style.opacity=1;
+        document.getElementById("er-user-name").innerText = "*Not empty";
     } else {
-        document.getElementById("er-user-name").innerHTML = "";
+        document.getElementById("er-user-name").style.opacity = 0;
+
     }
     console.log(pass.length);
     if (pass.length === 0) {
         check = false;
-        document.getElementById("er-password").innerText = "*không được để trống";
+        document.getElementById("er-password").style.opacity = 1;
+        document.getElementById("er-password").innerText = "*Not empty";
     }else if(pass.length<8){
         document.getElementById("er-password").innerText = "*password have to more than 8 character";
     }
      else {
-        document.getElementById("er-password").innerText = "";
+        document.getElementById("er-password").style.opacity = 0;
+
     }
     return check;
 }

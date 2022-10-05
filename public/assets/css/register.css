@@ -16,8 +16,8 @@ body {
 
 #container {
     position: relative;
-    width: 80em;
-    height: 40em;
+    width: 95%;
+    height: 98%;
     border-radius: 1em;
     background-color: #a3bac4;
 }
@@ -34,29 +34,26 @@ body {
 form {
     width: 100%;
     height: 100%;
-
 }
 
 .content {
     width: 100%;
+    height: auto;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
-.content>div {
-    height: 5em;
-    margin: 1.5em 0;
-}
-.content>div:nth-child(1){
-    margin: 0;
+.f-name,.l-name{
+    width: 40%;
 }
 .er {
+    font-family: 'Poppins';
     color: #eb4242;
     font-style: italic;
     font-size: 0.8;
+    opacity: 0;
 }
 
 .name {
@@ -82,7 +79,7 @@ form {
 .title {
     font-size: 1.5em;
     text-align: center;
-    height: 3em;
+    height: auto;
 }
 
 .img-container {
