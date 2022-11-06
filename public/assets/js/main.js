@@ -79,8 +79,7 @@ function createPoke(data){
                         </div>
                     </div>
                 </div>
-            </a>
-    `
+            </a>`
             return poke
 }
 

@@ -25,7 +25,9 @@ Route::get('/register',function(){
 Route::get('/login',function(){
     return view ('login');
 });
-
+Route::get('/shop',function(){
+    return view ('shop');
+});
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {return view('admin');});
 });
