@@ -59,12 +59,12 @@
                 <div class="field user-name">
                     <label for="">User name</label> <br>
                     <input type="text" name="" id="name" placeholder="User name" class="input">
-                    <span class="er er-user-name" id="er-user-name">.</span>
+                    <span class="er er-user-name" id="er-user-name"></span>
                 </div>
                 <div class="field password">
                     <label for="">Password</label> <br>
                     <input type="password" name="Password" id="pass" placeholder="Password" class="input">
-                    <span class="er er-password" id="er-password">.</span>
+                    <span class="er er-password" id="er-password"></span>
                 </div>
                 <div class=" check">
                     <div class="check-input">
@@ -102,6 +102,20 @@
         </form>
     </div> -->
     <script src="{{asset('assets/js/login.js')}}"></script>
+    <script src ="{{asset('assets/js/validation.js')}}">
+
+    </script>
+    <script>
+        Validation({
+            form: '.form',
+            error: '.er',
+            rules : [
+                Validation.isRequired('#name'),
+                Validation.isRequired('#pass'),
+                Validation.minLength('#pass',6)
+            ]
+        });
+    </script>
 </body>
 
 </html>
