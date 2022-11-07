@@ -31,3 +31,7 @@ Route::get('/shop',function(){
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {return view('admin');});
 });
+
+Route::get('ten-san-pham-slug', function () {
+    return view('detail_product');
+});
