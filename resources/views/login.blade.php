@@ -27,7 +27,7 @@
         </div>
         <div class="text-login">
             <button class="btn-login">Login/</button>
-            <button>Register</button>
+            <button onclick="window.location='{{ url("/register") }}'">Register</button>
         </div>
 
     </div>
@@ -51,7 +51,7 @@
         <i class="icon fa-solid fa-envelope"></i>
     </div>
     <div class="form tranX-300">
-        <form id="login" >
+        <form id="login" method="post" >
             <div class="form-title">
                 <h2>Login</h2>
             </div>
@@ -86,9 +86,9 @@
            
             <div class="regis">
                 <span>You don't have account?</span>
-                <span class="underline"><i>Register</i> </span>
+                <span class="underline" onclick="window.location='{{ url("/register") }}'"><i>Register</i> </span>
             </div>
-            
+            {{ csrf_field() }}
         </form>
     </div>
     <div class="introduce-login tranX300">

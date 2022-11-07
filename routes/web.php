@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/detail', function () {
     return view('detail');
 });
-Route::get('/', function () {
+Route::get('/info', function () {
     return view('pokedex');
 });
 Route::get('/register',function(){
@@ -31,3 +31,8 @@ Route::get('/shop',function(){
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {return view('admin');});
 });
+
+route::get('/', [App\Http\Controllers\LoginController::class, 'getLogin']);
+route::post('/', [App\Http\Controllers\LoginController::class, 'postLogin']);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
