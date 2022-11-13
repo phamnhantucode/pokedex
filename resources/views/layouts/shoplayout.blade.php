@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="{{ asset('assets/css/rest.css') }}" media="all" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/css/shoplayout.css') }}" media="all" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/cartDropdown.css') }}" media="all" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     @yield('css')
 </head>
 <body>
@@ -43,14 +46,50 @@
                     <a href="">register</a>
                 </div> -->
 
-                <div class="header__account__user flex-row-center-between">
-                    <div>
-                        <a href="">
+                <div class=" flex-row-center-between">
+                    
+                        {{-- <a href="" id="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                        <div>4</div>
-                    </div>
-                    <div>
+                        </a> --}}
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </a>
+                          <ul class="dropdown-menu dropdown-cart">
+                            <li>
+                                <span class="item">
+                                  <span class="item-left">
+                                      <img width="70" src="https://htmldemo.net/lukani/lukani/assets/img/product/product1.jpg" alt="" />
+                                      <span class="item-info">
+                                          <span>Item name</span>
+                                          <span>23$</span>
+                                      </span>
+                                  </span>
+                                  <span class="item-right">
+                                      <button class="btn btn-xs btn-danger pull-right">x</button>
+                                  </span>
+                              </span>
+                            </li>
+                            <li>
+                                <span class="item">
+                                  <span class="item-left">
+                                      <img width="70" src="https://htmldemo.net/lukani/lukani/assets/img/product/product1.jpg" alt="" />
+                                      <span class="item-info">
+                                          <span>Item name</span>
+                                          <span>23$</span>
+                                      </span>
+                                  </span>
+                                  <span class="item-right">
+                                      <button class="btn btn-xs btn-danger pull-right">x</button>
+                                  </span>
+                              </span>
+                            </li>
+                            <li class="divider"></li>
+                            <li style="text-align: center"><a class="text-center" href="">View Cart</a></li>
+                            <li style="text-align: center; color: red">Total price: 100 USD </li>
+                          </ul>
+                    
+                    
+                    <div class="header__account__user">
                         <div href="" class="user__account flex-row-center-between">
                             <span class="material-symbols-outlined">
                             account_circle
@@ -82,6 +121,7 @@
             </div>
         </div>
     </div>
+    
     <div id="root">
         @yield('root')
     </div> 

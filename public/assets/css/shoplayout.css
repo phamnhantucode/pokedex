@@ -78,9 +78,7 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-.header__account *:hover {
-    color: var(--primaty-color);
-}
+
 .header__account span {
     font-size: 30px;
 }
@@ -90,6 +88,7 @@
     font-size: 16px;
     text-transform: unset;
     position: relative;
+    margin-left: 25px;
 }
 .header__account__user div:first-child{
     position: relative;
@@ -132,6 +131,10 @@
 }
 .header__account__user ul li {
     padding: 12px;
+}
+
+.header__account__user *:hover {
+    color: var(--primaty-color);
 }
 
 .category {
